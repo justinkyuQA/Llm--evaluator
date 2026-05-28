@@ -1,3 +1,7 @@
+import sys
+import os
+
+sys.path.append(os.path.join(os.path.dirname(__file__), "src"))
 import json
 from src.fuzzer import fuzz
 from src.runner import mock_llm
