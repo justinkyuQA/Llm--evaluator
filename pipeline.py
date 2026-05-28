@@ -3,9 +3,10 @@ import os
 
 sys.path.append(os.path.join(os.path.dirname(__file__), "src"))
 import json
-from src.fuzzer import fuzz
-from src.runner import mock_llm
-from src.evaluator import evaluate
+
+from fuzzer import fuzz
+from runner import mock_llm
+from evaluator import evaluate
 
 OUTPUT_FILE = "data/final_results.jsonl"
 
